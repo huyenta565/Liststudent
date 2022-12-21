@@ -13,7 +13,7 @@ namespace StudentL.Models
         [MaxLength(100, ErrorMessage = "Không được để trống tên")]
         public string? Name { get; set; }
 
-        [Range(7, 18, ErrorMessage = "Mời nhập lại")]
+        [Range(18, 27, ErrorMessage = "Mời nhập lại")]
         public int Age { get; set; }
 
         public string? Sex { get; set; }

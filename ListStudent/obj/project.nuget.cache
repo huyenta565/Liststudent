@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JW8sqCo8oaz3/kcB5kYE2PnMw83GaDFtUkqkIW70fstmJBkqkFtTj6fNT98ho36cQgfyYxkTdAYt/ROrYaWdKQ==",
+  "dgSpecHash": "7EI0XyYTDBAlWZ55cLjs0VP4Z2dFwLvq88w0Kbe+8L4SIw93GpuoUSKO/gP7rJNfz0DVCvAbSCjpJOFz0hfKpQ==",
   "success": true,
-  "projectFilePath": "E:\\Assignment\\QuanLyHocSinh\\ListStudent\\ListStudent.csproj",
+  "projectFilePath": "C:\\Users\\PC\\Desktop\\Liststudent\\ListStudent\\ListStudent.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

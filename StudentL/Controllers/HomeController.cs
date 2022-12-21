@@ -19,15 +19,7 @@ namespace StudentL.Controllers
 
         public IActionResult Index()
         {
-            var student = this.context?.Student!.Select(m => new Student
-            {
-                Id = m.Id,
-                Name = m.Name,
-                Age = m.Age,
-                Sex = m.Sex,
-                Address = m.Address
-            });
-            return View(student);
-        } 
+            return View();
+        }
     }
 }
