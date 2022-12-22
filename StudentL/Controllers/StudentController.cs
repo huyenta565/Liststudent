@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis;
 using StudentData;
 using StudentL.Models;
 using StudentL.ViewModels;
+using System.Net;
 
 namespace StudentL.Controllers
 {
@@ -26,21 +28,51 @@ namespace StudentL.Controllers
             });
             return View(student);
         }       
+      
         public ActionResult Edit(int Id)
         {
             var std = context.Student!.Where(s => s.Id == Id).FirstOrDefault();
             return View(std);
         }
+       
         public ActionResult Create()
         {
             return View();
         }
-        [HttpPost]
-        public ActionResult Create(Student std)
-        {
-            context.Student!.Add(std);
-            context.SaveChanges();
 
+        public ActionResult Delete(int? Id)
+        {
+            var student = context.Student!.Find(Id);
+            return View(student);
+        }
+        [HttpPost]
+        public ActionResult Create(StudentViewModel std)
+        {
+            var idMax = context.Student!.OrderByDescending(s => s.Id).FirstOrDefault();
+            var student = new Student
+            {
+                Id = idMax.Id + 1,
+                Name = std.Name,
+                Address = std.Address,
+                Age = std.Age,
+                Sex = std.Sex,
+                LopHocId = std.LopHocId,
+            };
+            var lophoc = new LopHoc
+            {
+                Id = Guid.NewGuid(),
+                Name = "10A3",
+                HocSinh = new List<Student>
+                {
+                    new Student
+                    {
+                        Id = student.Id,
+                    }
+                }
+            }
+            context.Student!.Add(student);
+            context.SaveChanges();
+            
             return RedirectToAction("Index");
         }
         [HttpPost]
@@ -56,5 +88,15 @@ namespace StudentL.Controllers
 
             return RedirectToAction("Index");
         }
+
+        [HttpPost]
+        public ActionResult Delete(int Id)
+        {
+            Student std = context.Student!.Find(Id);
+            context.Student!.Remove(std);
+            context.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
     }
 }

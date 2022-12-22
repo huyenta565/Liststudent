@@ -278,3 +278,10 @@ E:\Assignment\QuanLyHocSinh\StudentL\obj\Debug\net6.0\refint\StudentL.dll
 E:\Assignment\QuanLyHocSinh\StudentL\obj\Debug\net6.0\StudentL.pdb
 E:\Assignment\QuanLyHocSinh\StudentL\obj\Debug\net6.0\StudentL.genruntimeconfig.cache
 E:\Assignment\QuanLyHocSinh\StudentL\obj\Debug\net6.0\ref\StudentL.dll
+E:\Assignment\QuanLyHocSinh\StudentL\bin\Debug\net6.0\System.Web.Mvc.dll
+E:\Assignment\QuanLyHocSinh\StudentL\bin\Debug\net6.0\System.Web.Razor.dll
+E:\Assignment\QuanLyHocSinh\StudentL\bin\Debug\net6.0\System.Web.Helpers.dll
+E:\Assignment\QuanLyHocSinh\StudentL\bin\Debug\net6.0\System.Web.WebPages.Deployment.dll
+E:\Assignment\QuanLyHocSinh\StudentL\bin\Debug\net6.0\System.Web.WebPages.Razor.dll
+E:\Assignment\QuanLyHocSinh\StudentL\bin\Debug\net6.0\System.Web.WebPages.dll
+E:\Assignment\QuanLyHocSinh\StudentL\bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll

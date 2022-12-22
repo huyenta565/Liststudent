@@ -1,4 +1,5 @@
 ﻿using StudentData;
+using StudentL.Models;
 
 namespace StudentL.ViewModels
 {
@@ -9,6 +10,7 @@ namespace StudentL.ViewModels
         public int Age { get; set; }
         public string? Sex { get; set; }
         public string? Address { get; set; }
+        public Guid LopHocId { get; set; }
 
     }
 }

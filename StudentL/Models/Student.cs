@@ -20,5 +20,8 @@ namespace StudentL.Models
 
         [MaxLength(100, ErrorMessage = "Không được để trống địa chỉ")]
         public string? Address { get; set; }
+        public Guid LopHocId { get; set; }
+        [ForeignKey("LopHocId")]
+        public virtual LopHoc LopHoc { get; set; }
     }
 }
